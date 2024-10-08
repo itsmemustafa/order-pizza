@@ -299,12 +299,24 @@ namespace Pizaa_APP
             rdthin_Click(sender, e);
             rdeatin_Click(sender, e);
         }
+          private void reset_group_boxs()
+  {
+      gbsize.Enabled = true;
+      gbcrust.Enabled = true;
+      gbtopping.Enabled = true;
+      gbwheretoeat.Enabled = true;
+      bconfirm.Enabled = true;
+
+
+
+  }
         private void bReset_Click(object sender, EventArgs e)
         {
             Reset_order_summary(sender, e);
             reset_size();
             reset_crusttype();
             reset_whetetoeat();
+            reset_group_boxs()
 
         }
         //lock the from controls after confirm order
